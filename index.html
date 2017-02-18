@@ -41,7 +41,7 @@
 
 			navigator.getUserMedia({video: true, audio: true}, (localMediaStream)=>{
 				let video = document.querySelector('video')
-				video.src = windows.URL.createObjectURL(localMediaStream)
+				video.src = window.URL.createObjectURL(localMediaStream)
 			}, errorCallback)
 
 			onload=()=>{
